@@ -1,0 +1,65 @@
+
+:root {
+  --background:url(bitbg.jpg);
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.responsebox{
+  position: absolute;
+  bottom: 50px;
+  right: 33%;
+  width: 50%;
+  height: 40px;
+  font-size: large;
+  border-radius:5px;
+}
+.response {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 60%; 
+  overflow-y: auto; 
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  position: absolute;
+  font-weight: 500;
+
+  background-color:gainsboro;
+  bottom: 50px;
+  right: 20%;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
+.message-box {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+.message-box.user{
+  background-color: azure;
+  align-self: flex-start;
+}
+.message-box.bitbot{
+  background-color:aqua;
+  align-self: flex-end;
+}
